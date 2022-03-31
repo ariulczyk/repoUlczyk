@@ -4,45 +4,65 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="../css/style.css">
 	<title>Bio</title>
 </head>
 
 <body>
+	<!-- Inicia Nav -->
 	<header>
-		<nav>
-			<a href="../index.html">
-				<img src="../img/logo.png" alt="logo ari ulczyk fotografía" width="40%">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../img/logo.png" alt="logo marca" width="50%">
+				<h1>Nuevas miradas, nuevas sonrisas</h1>
 			</a>
-			<ul>
-				<li>
-					<a href="../index.html">Inicio</a>
-				</li>
-				<li>
-					<a href="productos.html">Productos</a>
-				</li>
-				<li>
-					<a href="precios.html">Precios</a>
-				</li>
-				<li>
-					<a href="bio.html">Bio</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-
-	<h1>Nuevas miradas, nuevas sonrisas</h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../secciones/productos.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../secciones/precios.html">Precios</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Otros trabajos
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Deportivas</a></li>
+							<li><a class="dropdown-item" href="#">Fotoproducto</a></li>
+							<li><a class="dropdown-item" href="#">Bio</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+	
 
 	<h2>Sobre mí</h2>
-	<p>Empezó como un juego con una cámara de fotos, ello me llevó a conocer un
+	<section class="sobre">
+	<img class="imgBio" src="../img/perfil.png" alt="foto de perfil">
+	<p>	Empezó como un juego con una cámara de fotos, ello me llevó a conocer un
 		poco mas y a aprender por mi cuenta. Primero fue con un curso, también un poco autodidacta y por
 		último estudiar la carrera de fotografía. Hoy, me dedico a la fotografía deportiva aunque una
 		pasión un poco tapada es el retrato a bebes y niños. Me destaca la paciencia para poder capturar la
 		belleza de los niños y conseguir esa sonrisa o una mirada que tanto puede enamorar a sus padres.</p>
-
+	</section>
 	<footer>
 		<section class="footer">
 			<h3>Redes sociales</h3>
@@ -51,6 +71,11 @@
 			<h4>Todos los derechos reservados.</h4>
 		</section>
 	</footer>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
 
 </body>
 
